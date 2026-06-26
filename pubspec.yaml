@@ -1,0 +1,65 @@
+name: cineflow_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Updated SDK version to a more stable range
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter  
+    
+
+  # Core UI & State Management
+  cupertino_icons: ^1.0.8
+  get: ^4.6.6 # A stable version of GetX
+  
+  # Data Handling & Storage
+  flutter_dotenv: ^5.2.1
+  http: ^1.2.1
+  sqflite: ^2.3.2
+  path: ^1.9.0
+  shared_preferences: ^2.2.3
+  
+  # UI Widgets & Animations
+  youtube_player_flutter: ^9.0.1
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  lottie: ^3.1.2
+  flutter_staggered_grid_view: ^0.7.0 # Check if this is still needed
+  pull_to_refresh: ^2.0.0
+  image_picker: ^1.1.1
+  share_plus: ^10.0.2
+  
+  # Connectivity & System
+  flutter_local_notifications: ^17.0.0
+  timezone: ^0.9.4
+  connectivity_plus: ^5.0.2
+  url_launcher: ^6.2.5
+  permission_handler: ^11.3.1
+  device_info_plus: ^10.1.0
+  package_info_plus: ^8.0.2
+  flutter_svg: ^2.0.10+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0 # Updated to a more recent version
+  
+  # Development tools for icons and splash screens
+  flutter_native_splash: ^2.4.0
+  flutter_launcher_icons: ^0.13.1
+
+# The "flutter" section remains the same
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/images/
+    - assets/animations/
+    - assets/icons/
+    - assets/translations/
